@@ -2,6 +2,6 @@ import pytest
 from calcmult import mult
 
 
-@pytest.mark.parametrize('num1,num2,valoresperado', [(0, 0, 0), (-2,-5,-7), (-2, 5,3), (7.5, 5.4,12.9), (-1.0, -2.0,-3.0), ('DOIS', 2, None)])
-def test_soma(num1,num2, valoresperado):
-    assert soma(num1,num2) == valoresperado
+@pytest.mark.parametrize('n1,n2,produto', [(0, 0, 0), (-2,-5,10), (-2, 7,-14), (7.5, 5.4,40.5), (-1.0, -2.0,2.0), ('DOIS', 2, None)])
+def test_soma(n1,n2, produto):
+    assert soma(n1,n2) == produto
